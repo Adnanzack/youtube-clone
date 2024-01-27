@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+*:focus{
+    outline: none;
+}
+body{
+    position: relative;
+    background-color: #f0f0f0;
+}
+/* a{
+    text-decoration: none;
+    color: #5a5a5a;
+}
+img{
+    cursor: pointer;
+} */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 2.5vw;
+}
+
+.menubar{
+    width: 20px;
+    height: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.menubar span{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #979797;
+}
+.menubar span:nth-child(1){
+    top: 0;
+}
+.menubar span:nth-child(3){
+    top: 100%;
+}
+.logo{
+    height: 30px;
+    margin: -10px 30px 0;
+} 
+.searchbox{
+    position: relative;
+    max-width: 500px;
+    width: 50%;
+    height: 35px;
+    display: flex;
+    margin-left: 270px;
+}
+.searchbar{
+    width: 85%;
+    height: 100%;
+    border: 2px solid #dbdbdb;
+    padding: 0 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.searchbtn{
+    width: 15%;
+    height: 100%;
+    background: #f0f0f0;
+    border: 2px solid #dbdbdb;
+    padding: 5px 0;
+    border-left: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.searchbtn img{
+    height: 100%;
+}
+.headright{
+    height: 35px;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+.headright img{
+    height: 80%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.profile{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.slidbar{
+    position: fixed;
+    top: 60px;
+    left: 0;
+    min-width: 250px;
+    width: 250px;
+    height: calc(100vh - 60px);
+    background: #fff;
+    padding-right: 10px;
+}
+.links{
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #242424;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+
+}
+.links img{
+    height: 25px;
+    margin-right: 20px;
+}
+.links:hover,
+.links.active{
+    background: rgba(0, 0, 0, 0.1);
+
+}
+
+.slidbar hr{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+/* filters */
+
+.filter{
+    position: fixed;
+    left: 250px;
+    top: 60px;
+    width: calc(100% - 250px);
+    height: 60px;
+    background: #fff;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+}
+
+.filter::-webkit-scrollbar{
+    display: none;
+}
+.btn{
+    flex: 0 0 auto;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: #f0f0f0;
+    border: 1px solid #dbdbdb;
+    margin-right: 10px;
+    color: #242424;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+.b1{
+    color: #fff;
+    background: #242424;
+
+}
+.videocontainer{
+    width: calc(100% - 250px);
+    margin-top: 120px;
+    margin-left: 250px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-gap: 20px 5px;
+    overflow-x: hidden;
+}
+.video{
+    min-height: 259px;
+    height: auto;
+}
+.channel{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    background-size: cover;
+    object-fit: cover;
+    
+}
+.cntnt{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.cntnt img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.cntnt-text h4{
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    
+}
+.cntnt-text p{
+    font-size: 14px;
+    margin: 2px 0;
+    color: #979797;
+}
